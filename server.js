@@ -3,7 +3,7 @@ const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = process.env.PORT || 8787;
+const PORT = process.env.PORT || 9000;
 const files = { '/': 'index.html', '/templates.json': 'templates.json' };
 
 http.createServer(async (req, res) => {
