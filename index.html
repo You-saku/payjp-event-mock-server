@@ -1,0 +1,58 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>PAY.JP Event Mock Sender</title>
+<style>
+  body { font: 14px system-ui, sans-serif; margin: 0; padding: 16px; display: grid; grid-template-columns: 260px 1fr; gap: 16px; height: 100vh; box-sizing: border-box; }
+  aside { overflow: auto; border-right: 1px solid #ddd; }
+  aside button { display: block; width: 100%; text-align: left; border: 0; background: none; padding: 6px 8px; cursor: pointer; font: inherit; }
+  aside button.active { background: #e8f0fe; }
+  aside small { color: #888; }
+  main { display: flex; flex-direction: column; gap: 8px; min-width: 0; }
+  input { width: 100%; padding: 6px; box-sizing: border-box; font: inherit; }
+  textarea { flex: 1; font: 12px ui-monospace, monospace; padding: 8px; box-sizing: border-box; resize: none; }
+  pre { margin: 0; padding: 8px; background: #f5f5f5; max-height: 200px; overflow: auto; white-space: pre-wrap; word-break: break-all; }
+  .row { display: flex; gap: 8px; align-items: center; }
+  #send { padding: 8px 20px; font: inherit; }
+</style>
+<aside id="list"></aside>
+<main>
+  <div class="row"><label style="width:120px">Webhook URL</label><input id="url" placeholder="https://..."></div>
+  <div class="row"><label style="width:120px">Webhook Token</label><input id="token" placeholder="whook_..."></div>
+  <div class="row"><button id="send">送信</button><button id="reset">テンプレに戻す</button><span id="status"></span></div>
+  <textarea id="editor" spellcheck="false"></textarea>
+  <pre id="result"></pre>
+</main>
+<script>
+  const $ = id => document.getElementById(id);
+  let templates = [], current = null;
+  for (const k of ['url', 'token']) { $(k).value = localStorage.getItem(k) || ''; $(k).oninput = () => localStorage.setItem(k, $(k).value); }
+
+  const hex = n => Array.from(crypto.getRandomValues(new Uint8Array(n)), b => b.toString(16).padStart(2, '0')).join('').slice(0, n);
+  const build = t => ({
+    livemode: false, object: 'event', id: 'evnt_' + hex(27), data: t.data,
+    pending_webhooks: 1, created: Math.floor(Date.now() / 1000), type: t.type, description: t.description,
+  });
+  const select = t => {
+    current = t;
+    $('editor').value = JSON.stringify(build(t), null, 2);
+    document.querySelectorAll('aside button').forEach(b => b.classList.toggle('active', b.dataset.type === t.type));
+  };
+
+  fetch('/templates.json').then(r => r.json()).then(ts => {
+    templates = ts;
+    $('list').innerHTML = ts.map(t => `<button data-type="${t.type}">${t.type}<br><small>${t.description}</small></button>`).join('');
+    $('list').onclick = e => { const b = e.target.closest('button'); if (b) select(ts.find(t => t.type === b.dataset.type)); };
+    select(ts[0]);
+  });
+
+  $('reset').onclick = () => current && select(current);
+  $('send').onclick = async () => {
+    let event;
+    try { event = JSON.parse($('editor').value); } catch (e) { return $('result').textContent = 'JSON parse error: ' + e.message; }
+    $('status').textContent = '送信中...';
+    const r = await fetch('/send', { method: 'POST', headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ url: $('url').value, token: $('token').value, event }) }).then(r => r.json());
+    $('status').textContent = r.status ? `HTTP ${r.status}` : 'error';
+    $('result').textContent = r.body;
+  };
+</script>

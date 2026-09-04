@@ -1,0 +1,1424 @@
+[
+  {
+    "type": "charge.succeeded",
+    "description": "支払いの成功",
+    "data": {
+      "id": "ch_fa990a4c10672a93053a774730b0a",
+      "card": {
+        "id": "car_6845da1a8651f889bc432362dfcb",
+        "name": null,
+        "brand": "Visa",
+        "email": null,
+        "is_jp": true,
+        "last4": "4242",
+        "phone": null,
+        "object": "card",
+        "country": null,
+        "created": 1433127982,
+        "customer": null,
+        "exp_year": 2042,
+        "livemode": false,
+        "metadata": {},
+        "cvc_check": "passed",
+        "exp_month": 4,
+        "address_zip": null,
+        "fingerprint": "e1d8225886e3a7211127df751c86787f",
+        "address_city": null,
+        "address_line1": null,
+        "address_line2": null,
+        "address_state": null,
+        "address_zip_check": "unchecked",
+        "three_d_secure_status": null
+      },
+      "paid": true,
+      "amount": 3000,
+      "object": "charge",
+      "tenant": "ten_sample",
+      "created": 1433127983,
+      "term_id": "tm_425000e2a448b39b83480a358fee5",
+      "captured": true,
+      "currency": "jpy",
+      "customer": null,
+      "fee_rate": "3.30",
+      "livemode": false,
+      "metadata": {},
+      "refunded": false,
+      "expired_at": null,
+      "captured_at": 1433127983,
+      "description": "",
+      "failure_code": null,
+      "platform_fee": null,
+      "subscription": null,
+      "refund_reason": null,
+      "amount_refunded": 0,
+      "failure_message": null,
+      "platform_fee_rate": "10.00",
+      "total_platform_fee": 300,
+      "three_d_secure_status": null
+    }
+  },
+  {
+    "type": "charge.failed",
+    "description": "支払いの失敗",
+    "data": {
+      "id": "ch_fa990a4c10672a93053a774730b0a",
+      "card": {
+        "id": "car_6845da1a8651f889bc432362dfcb",
+        "name": null,
+        "brand": "Visa",
+        "email": null,
+        "is_jp": true,
+        "last4": "4242",
+        "phone": null,
+        "object": "card",
+        "country": null,
+        "created": 1433127982,
+        "customer": null,
+        "exp_year": 2042,
+        "livemode": false,
+        "metadata": {},
+        "cvc_check": "passed",
+        "exp_month": 4,
+        "address_zip": null,
+        "fingerprint": "e1d8225886e3a7211127df751c86787f",
+        "address_city": null,
+        "address_line1": null,
+        "address_line2": null,
+        "address_state": null,
+        "address_zip_check": "unchecked",
+        "three_d_secure_status": null
+      },
+      "paid": false,
+      "amount": 3000,
+      "object": "charge",
+      "tenant": "ten_sample",
+      "created": 1433127983,
+      "term_id": "tm_425000e2a448b39b83480a358fee5",
+      "captured": false,
+      "currency": "jpy",
+      "customer": null,
+      "fee_rate": "3.30",
+      "livemode": false,
+      "metadata": {},
+      "refunded": false,
+      "expired_at": null,
+      "captured_at": null,
+      "description": "",
+      "failure_code": "card_declined",
+      "platform_fee": null,
+      "subscription": null,
+      "refund_reason": null,
+      "amount_refunded": 0,
+      "failure_message": "カード会社に決済を拒否されました。",
+      "platform_fee_rate": "10.00",
+      "total_platform_fee": 300,
+      "three_d_secure_status": null
+    }
+  },
+  {
+    "type": "charge.updated",
+    "description": "支払いの更新",
+    "data": {
+      "id": "ch_fa990a4c10672a93053a774730b0a",
+      "card": {
+        "id": "car_6845da1a8651f889bc432362dfcb",
+        "name": null,
+        "brand": "Visa",
+        "email": null,
+        "is_jp": true,
+        "last4": "4242",
+        "phone": null,
+        "object": "card",
+        "country": null,
+        "created": 1433127982,
+        "customer": null,
+        "exp_year": 2042,
+        "livemode": false,
+        "metadata": {},
+        "cvc_check": "passed",
+        "exp_month": 4,
+        "address_zip": null,
+        "fingerprint": "e1d8225886e3a7211127df751c86787f",
+        "address_city": null,
+        "address_line1": null,
+        "address_line2": null,
+        "address_state": null,
+        "address_zip_check": "unchecked",
+        "three_d_secure_status": null
+      },
+      "paid": true,
+      "amount": 3000,
+      "object": "charge",
+      "tenant": "ten_sample",
+      "created": 1433127983,
+      "term_id": "tm_425000e2a448b39b83480a358fee5",
+      "captured": true,
+      "currency": "jpy",
+      "customer": null,
+      "fee_rate": "3.30",
+      "livemode": false,
+      "metadata": {},
+      "refunded": false,
+      "expired_at": null,
+      "captured_at": 1433127983,
+      "description": "updated",
+      "failure_code": null,
+      "platform_fee": null,
+      "subscription": null,
+      "refund_reason": null,
+      "amount_refunded": 0,
+      "failure_message": null,
+      "platform_fee_rate": "10.00",
+      "total_platform_fee": 300,
+      "three_d_secure_status": null
+    }
+  },
+  {
+    "type": "charge.refunded",
+    "description": "支払いの返金",
+    "data": {
+      "id": "ch_fa990a4c10672a93053a774730b0a",
+      "card": {
+        "id": "car_6845da1a8651f889bc432362dfcb",
+        "name": null,
+        "brand": "Visa",
+        "email": null,
+        "is_jp": true,
+        "last4": "4242",
+        "phone": null,
+        "object": "card",
+        "country": null,
+        "created": 1433127982,
+        "customer": null,
+        "exp_year": 2042,
+        "livemode": false,
+        "metadata": {},
+        "cvc_check": "passed",
+        "exp_month": 4,
+        "address_zip": null,
+        "fingerprint": "e1d8225886e3a7211127df751c86787f",
+        "address_city": null,
+        "address_line1": null,
+        "address_line2": null,
+        "address_state": null,
+        "address_zip_check": "unchecked",
+        "three_d_secure_status": null
+      },
+      "paid": true,
+      "amount": 3000,
+      "object": "charge",
+      "tenant": "ten_sample",
+      "created": 1433127983,
+      "term_id": "tm_425000e2a448b39b83480a358fee5",
+      "captured": true,
+      "currency": "jpy",
+      "customer": null,
+      "fee_rate": "3.30",
+      "livemode": false,
+      "metadata": {},
+      "refunded": true,
+      "expired_at": null,
+      "captured_at": 1433127983,
+      "description": "テスト決済",
+      "failure_code": null,
+      "platform_fee": null,
+      "subscription": null,
+      "refund_reason": "customer request",
+      "amount_refunded": 3000,
+      "failure_message": null,
+      "platform_fee_rate": "10.00",
+      "total_platform_fee": 300,
+      "three_d_secure_status": null
+    }
+  },
+  {
+    "type": "charge.captured",
+    "description": "支払いの確定",
+    "data": {
+      "id": "ch_fa990a4c10672a93053a774730b0a",
+      "card": {
+        "id": "car_6845da1a8651f889bc432362dfcb",
+        "name": null,
+        "brand": "Visa",
+        "email": null,
+        "is_jp": true,
+        "last4": "4242",
+        "phone": null,
+        "object": "card",
+        "country": null,
+        "created": 1433127982,
+        "customer": null,
+        "exp_year": 2042,
+        "livemode": false,
+        "metadata": {},
+        "cvc_check": "passed",
+        "exp_month": 4,
+        "address_zip": null,
+        "fingerprint": "e1d8225886e3a7211127df751c86787f",
+        "address_city": null,
+        "address_line1": null,
+        "address_line2": null,
+        "address_state": null,
+        "address_zip_check": "unchecked",
+        "three_d_secure_status": null
+      },
+      "paid": true,
+      "amount": 3000,
+      "object": "charge",
+      "tenant": "ten_sample",
+      "created": 1433127983,
+      "term_id": "tm_425000e2a448b39b83480a358fee5",
+      "captured": true,
+      "currency": "jpy",
+      "customer": null,
+      "fee_rate": "3.30",
+      "livemode": false,
+      "metadata": {},
+      "refunded": false,
+      "expired_at": null,
+      "captured_at": 1433127983,
+      "description": "テスト決済",
+      "failure_code": null,
+      "platform_fee": null,
+      "subscription": null,
+      "refund_reason": null,
+      "amount_refunded": 0,
+      "failure_message": null,
+      "platform_fee_rate": "10.00",
+      "total_platform_fee": 300,
+      "three_d_secure_status": null
+    }
+  },
+  {
+    "type": "dispute.created",
+    "description": "チャージバック発生",
+    "data": {
+      "id": "ch_fa990a4c10672a93053a774730b0a",
+      "card": {
+        "id": "car_6845da1a8651f889bc432362dfcb",
+        "name": null,
+        "brand": "Visa",
+        "email": null,
+        "is_jp": true,
+        "last4": "4242",
+        "phone": null,
+        "object": "card",
+        "country": null,
+        "created": 1433127982,
+        "customer": null,
+        "exp_year": 2042,
+        "livemode": false,
+        "metadata": {},
+        "cvc_check": "passed",
+        "exp_month": 4,
+        "address_zip": null,
+        "fingerprint": "e1d8225886e3a7211127df751c86787f",
+        "address_city": null,
+        "address_line1": null,
+        "address_line2": null,
+        "address_state": null,
+        "address_zip_check": "unchecked",
+        "three_d_secure_status": null
+      },
+      "paid": true,
+      "amount": 3000,
+      "object": "charge",
+      "tenant": "ten_sample",
+      "created": 1433127983,
+      "term_id": "tm_425000e2a448b39b83480a358fee5",
+      "captured": true,
+      "currency": "jpy",
+      "customer": null,
+      "fee_rate": "3.30",
+      "livemode": false,
+      "metadata": {},
+      "refunded": false,
+      "expired_at": null,
+      "captured_at": 1433127983,
+      "description": "テスト決済",
+      "failure_code": null,
+      "platform_fee": null,
+      "subscription": null,
+      "refund_reason": null,
+      "amount_refunded": 0,
+      "failure_message": null,
+      "platform_fee_rate": "10.00",
+      "total_platform_fee": 300,
+      "three_d_secure_status": null
+    }
+  },
+  {
+    "type": "token.created",
+    "description": "トークンの作成",
+    "data": {
+      "card": {
+        "address_city": null,
+        "address_line1": null,
+        "address_line2": null,
+        "address_state": null,
+        "address_zip": null,
+        "address_zip_check": "unchecked",
+        "brand": "Visa",
+        "country": null,
+        "created": 1442290383,
+        "customer": null,
+        "cvc_check": "passed",
+        "exp_month": 2,
+        "exp_year": 2099,
+        "fingerprint": "e1d8225886e3a7211127df751c86787f",
+        "id": "car_e3ccd4e0959f45e7c75bacc4be90",
+        "livemode": false,
+        "metadata": {},
+        "last4": "4242",
+        "name": "PAY TARO",
+        "object": "card",
+        "three_d_secure_status": "verified",
+        "email": "liveaccount@example.com",
+        "phone": "+81301234567"
+      },
+      "created": 1442290383,
+      "id": "tok_5ca06b51685e001723a2c3b4aeb4",
+      "livemode": false,
+      "object": "token",
+      "used": false
+    }
+  },
+  {
+    "type": "customer.created",
+    "description": "顧客の作成",
+    "data": {
+      "cards": {
+        "count": 0,
+        "data": [],
+        "has_more": false,
+        "object": "list",
+        "url": "/v1/customers/cus_121673955bd7aa144de5a8f6c262/cards"
+      },
+      "created": 1433127983,
+      "default_card": null,
+      "description": "test",
+      "email": null,
+      "id": "cus_121673955bd7aa144de5a8f6c262",
+      "livemode": false,
+      "metadata": null,
+      "object": "customer",
+      "subscriptions": {
+        "count": 0,
+        "data": [],
+        "has_more": false,
+        "object": "list",
+        "url": "/v1/customers/cus_121673955bd7aa144de5a8f6c262/subscriptions"
+      }
+    }
+  },
+  {
+    "type": "customer.updated",
+    "description": "顧客の更新",
+    "data": {
+      "cards": {
+        "count": 0,
+        "data": [],
+        "has_more": false,
+        "object": "list",
+        "url": "/v1/customers/cus_121673955bd7aa144de5a8f6c262/cards"
+      },
+      "created": 1433127983,
+      "default_card": null,
+      "description": "test",
+      "email": null,
+      "id": "cus_121673955bd7aa144de5a8f6c262",
+      "livemode": false,
+      "metadata": null,
+      "object": "customer",
+      "subscriptions": {
+        "count": 0,
+        "data": [],
+        "has_more": false,
+        "object": "list",
+        "url": "/v1/customers/cus_121673955bd7aa144de5a8f6c262/subscriptions"
+      }
+    }
+  },
+  {
+    "type": "customer.deleted",
+    "description": "顧客の削除",
+    "data": {
+      "deleted": true,
+      "id": "cus_121673955bd7aa144de5a8f6c262",
+      "livemode": false
+    }
+  },
+  {
+    "type": "customer.card.created",
+    "description": "顧客のカード作成",
+    "data": {
+      "address_city": null,
+      "address_line1": null,
+      "address_line2": null,
+      "address_state": null,
+      "address_zip": null,
+      "address_zip_check": "unchecked",
+      "brand": "Visa",
+      "country": null,
+      "created": 1583375140,
+      "customer": null,
+      "cvc_check": "passed",
+      "exp_month": 2,
+      "exp_year": 2099,
+      "fingerprint": "e1d8225886e3a7211127df751c86787f",
+      "id": "car_6845da1a8651f889bc432362dfcb",
+      "last4": "4242",
+      "livemode": false,
+      "metadata": {},
+      "name": "PAY TARO",
+      "object": "card",
+      "three_d_secure_status": "verified",
+      "email": "liveaccount@example.com",
+      "phone": "+81301234567",
+      "is_jp": true
+    }
+  },
+  {
+    "type": "customer.card.updated",
+    "description": "顧客のカード更新",
+    "data": {
+      "address_city": null,
+      "address_line1": null,
+      "address_line2": null,
+      "address_state": null,
+      "address_zip": null,
+      "address_zip_check": "unchecked",
+      "brand": "Visa",
+      "country": null,
+      "created": 1583375140,
+      "customer": null,
+      "cvc_check": "passed",
+      "exp_month": 2,
+      "exp_year": 2099,
+      "fingerprint": "e1d8225886e3a7211127df751c86787f",
+      "id": "car_6845da1a8651f889bc432362dfcb",
+      "last4": "4242",
+      "livemode": false,
+      "metadata": {},
+      "name": "PAY TARO",
+      "object": "card",
+      "three_d_secure_status": "verified",
+      "email": "liveaccount@example.com",
+      "phone": "+81301234567",
+      "is_jp": true
+    }
+  },
+  {
+    "type": "customer.card.deleted",
+    "description": "顧客のカード削除",
+    "data": {
+      "deleted": true,
+      "id": "car_6845da1a8651f889bc432362dfcb",
+      "livemode": false
+    }
+  },
+  {
+    "type": "plan.created",
+    "description": "プランの作成",
+    "data": {
+      "amount": 500,
+      "billing_day": null,
+      "created": 1433127983,
+      "currency": "jpy",
+      "id": "pln_45dd3268a18b2837d52861716260",
+      "interval": "month",
+      "livemode": false,
+      "metadata": null,
+      "name": null,
+      "object": "plan",
+      "trial_days": 30
+    }
+  },
+  {
+    "type": "plan.updated",
+    "description": "プランの更新",
+    "data": {
+      "amount": 500,
+      "billing_day": null,
+      "created": 1433127983,
+      "currency": "jpy",
+      "id": "pln_45dd3268a18b2837d52861716260",
+      "interval": "month",
+      "livemode": false,
+      "metadata": null,
+      "name": null,
+      "object": "plan",
+      "trial_days": 30
+    }
+  },
+  {
+    "type": "plan.deleted",
+    "description": "プランの削除",
+    "data": {
+      "deleted": true,
+      "id": "pln_45dd3268a18b2837d52861716260",
+      "livemode": false
+    }
+  },
+  {
+    "type": "subscription.created",
+    "description": "定期課金の作成",
+    "data": {
+      "canceled_at": null,
+      "created": 1433127983,
+      "current_period_end": 1435732422,
+      "current_period_start": 1433140422,
+      "customer": "cus_4df4b5ed720933f4fb9e28857517",
+      "id": "sub_567a1e44562932ec1a7682d746e0",
+      "livemode": false,
+      "metadata": null,
+      "next_cycle_plan": null,
+      "object": "subscription",
+      "paused_at": null,
+      "plan": {
+        "amount": 1000,
+        "billing_day": null,
+        "created": 1432965397,
+        "currency": "jpy",
+        "id": "pln_9589006d14aad86aafeceac06b60",
+        "livemode": false,
+        "metadata": {},
+        "interval": "month",
+        "name": "test plan",
+        "object": "plan",
+        "trial_days": 0
+      },
+      "resumed_at": null,
+      "start": 1433140422,
+      "status": "active",
+      "trial_end": null,
+      "trial_start": null,
+      "prorate": false
+    }
+  },
+  {
+    "type": "subscription.updated",
+    "description": "定期課金の更新",
+    "data": {
+      "canceled_at": null,
+      "created": 1433127983,
+      "current_period_end": 1435732422,
+      "current_period_start": 1433140422,
+      "customer": "cus_4df4b5ed720933f4fb9e28857517",
+      "id": "sub_567a1e44562932ec1a7682d746e0",
+      "livemode": false,
+      "metadata": null,
+      "next_cycle_plan": null,
+      "object": "subscription",
+      "paused_at": null,
+      "plan": {
+        "amount": 1000,
+        "billing_day": null,
+        "created": 1432965397,
+        "currency": "jpy",
+        "id": "pln_9589006d14aad86aafeceac06b60",
+        "livemode": false,
+        "metadata": {},
+        "interval": "month",
+        "name": "test plan",
+        "object": "plan",
+        "trial_days": 0
+      },
+      "resumed_at": null,
+      "start": 1433140422,
+      "status": "active",
+      "trial_end": null,
+      "trial_start": null,
+      "prorate": false
+    }
+  },
+  {
+    "type": "subscription.deleted",
+    "description": "定期課金の削除",
+    "data": {
+      "deleted": true,
+      "id": "sub_567a1e44562932ec1a7682d746e0",
+      "livemode": false
+    }
+  },
+  {
+    "type": "subscription.paused",
+    "description": "定期課金の停止",
+    "data": {
+      "canceled_at": null,
+      "created": 1433127983,
+      "current_period_end": 1435732422,
+      "current_period_start": 1433140422,
+      "customer": "cus_4df4b5ed720933f4fb9e28857517",
+      "id": "sub_567a1e44562932ec1a7682d746e0",
+      "livemode": false,
+      "metadata": null,
+      "next_cycle_plan": null,
+      "object": "subscription",
+      "paused_at": 1433000000,
+      "plan": {
+        "amount": 1000,
+        "billing_day": null,
+        "created": 1432965397,
+        "currency": "jpy",
+        "id": "pln_9589006d14aad86aafeceac06b60",
+        "livemode": false,
+        "metadata": {},
+        "interval": "month",
+        "name": "test plan",
+        "object": "plan",
+        "trial_days": 0
+      },
+      "resumed_at": null,
+      "start": 1433140422,
+      "status": "paused",
+      "trial_end": null,
+      "trial_start": null,
+      "prorate": false
+    }
+  },
+  {
+    "type": "subscription.resumed",
+    "description": "定期課金の再開",
+    "data": {
+      "canceled_at": null,
+      "created": 1433127983,
+      "current_period_end": 1435732422,
+      "current_period_start": 1433140422,
+      "customer": "cus_4df4b5ed720933f4fb9e28857517",
+      "id": "sub_567a1e44562932ec1a7682d746e0",
+      "livemode": false,
+      "metadata": null,
+      "next_cycle_plan": null,
+      "object": "subscription",
+      "paused_at": null,
+      "plan": {
+        "amount": 1000,
+        "billing_day": null,
+        "created": 1432965397,
+        "currency": "jpy",
+        "id": "pln_9589006d14aad86aafeceac06b60",
+        "livemode": false,
+        "metadata": {},
+        "interval": "month",
+        "name": "test plan",
+        "object": "plan",
+        "trial_days": 0
+      },
+      "resumed_at": 1433000000,
+      "start": 1433140422,
+      "status": "active",
+      "trial_end": null,
+      "trial_start": null,
+      "prorate": false
+    }
+  },
+  {
+    "type": "subscription.canceled",
+    "description": "定期課金のキャンセル",
+    "data": {
+      "canceled_at": 1433000000,
+      "created": 1433127983,
+      "current_period_end": 1435732422,
+      "current_period_start": 1433140422,
+      "customer": "cus_4df4b5ed720933f4fb9e28857517",
+      "id": "sub_567a1e44562932ec1a7682d746e0",
+      "livemode": false,
+      "metadata": null,
+      "next_cycle_plan": null,
+      "object": "subscription",
+      "paused_at": null,
+      "plan": {
+        "amount": 1000,
+        "billing_day": null,
+        "created": 1432965397,
+        "currency": "jpy",
+        "id": "pln_9589006d14aad86aafeceac06b60",
+        "livemode": false,
+        "metadata": {},
+        "interval": "month",
+        "name": "test plan",
+        "object": "plan",
+        "trial_days": 0
+      },
+      "resumed_at": null,
+      "start": 1433140422,
+      "status": "canceled",
+      "trial_end": null,
+      "trial_start": null,
+      "prorate": false
+    }
+  },
+  {
+    "type": "subscription.renewed",
+    "description": "定期課金の期間更新",
+    "data": {
+      "canceled_at": null,
+      "created": 1433127983,
+      "current_period_end": 1435732422,
+      "current_period_start": 1433140422,
+      "customer": "cus_4df4b5ed720933f4fb9e28857517",
+      "id": "sub_567a1e44562932ec1a7682d746e0",
+      "livemode": false,
+      "metadata": null,
+      "next_cycle_plan": null,
+      "object": "subscription",
+      "paused_at": null,
+      "plan": {
+        "amount": 1000,
+        "billing_day": null,
+        "created": 1432965397,
+        "currency": "jpy",
+        "id": "pln_9589006d14aad86aafeceac06b60",
+        "livemode": false,
+        "metadata": {},
+        "interval": "month",
+        "name": "test plan",
+        "object": "plan",
+        "trial_days": 0
+      },
+      "resumed_at": null,
+      "start": 1433140422,
+      "status": "active",
+      "trial_end": null,
+      "trial_start": null,
+      "prorate": false
+    }
+  },
+  {
+    "type": "transfer.succeeded",
+    "description": "入金内容の確定",
+    "data": {
+      "amount": 1000,
+      "carried_balance": null,
+      "charges": {
+        "count": 1,
+        "data": [
+          {
+            "amount": 1000,
+            "amount_refunded": 0,
+            "captured": true,
+            "captured_at": 1441706750,
+            "card": {
+              "address_city": null,
+              "address_line1": null,
+              "address_line2": null,
+              "address_state": null,
+              "address_zip": null,
+              "address_zip_check": "unchecked",
+              "brand": "Visa",
+              "country": null,
+              "created": 1441706750,
+              "customer": null,
+              "cvc_check": "unchecked",
+              "exp_month": 5,
+              "exp_year": 2099,
+              "fingerprint": "e1d8225886e3a7211127df751c86787f",
+              "id": "car_93e59e9a9714134ef639865e2b9e",
+              "last4": "4242",
+              "name": null,
+              "object": "card",
+              "three_d_secure_status": null
+            },
+            "created": 1441706750,
+            "currency": "jpy",
+            "customer": "cus_b92b879e60f62b532d6756ae12af",
+            "description": null,
+            "expired_at": null,
+            "failure_code": null,
+            "failure_message": null,
+            "fee_rate": "3.00",
+            "id": "ch_60baaf2dc8f3e35684ebe2031a6e0",
+            "object": "charge",
+            "paid": true,
+            "refund_reason": null,
+            "refunded": false,
+            "subscription": null
+          }
+        ],
+        "has_more": false,
+        "object": "list",
+        "url": "/v1/transfers/tr_8f0c0fe2c9f8a47f9d18f03959ba1/charges"
+      },
+      "created": 1438354800,
+      "currency": "jpy",
+      "description": null,
+      "id": "tr_8f0c0fe2c9f8a47f9d18f03959ba1",
+      "livemode": false,
+      "object": "transfer",
+      "scheduled_date": "2015-09-16",
+      "status": "pending",
+      "summary": {
+        "charge_count": 1,
+        "charge_fee": 0,
+        "charge_gross": 1000,
+        "net": 1000,
+        "refund_amount": 0,
+        "refund_count": 0,
+        "dispute_amount": 0,
+        "dispute_count": 0
+      },
+      "term_end": 1439650800,
+      "term_start": 1438354800,
+      "transfer_amount": null,
+      "transfer_date": null
+    }
+  },
+  {
+    "type": "tenant.created",
+    "description": "テナント作成",
+    "data": {
+      "created": 1433127983,
+      "name": "test",
+      "id": "test",
+      "livemode": false,
+      "metadata": null,
+      "object": "tenant",
+      "platform_fee_rate": "10.15",
+      "payjp_fee_included": false,
+      "minimum_transfer_amount": 1000,
+      "bank_account_number": "0001000",
+      "bank_branch_code": "000",
+      "bank_code": "0000",
+      "bank_account_holder_name": "ヤマダ タロウ",
+      "bank_account_type": "普通",
+      "bank_account_status": "pending",
+      "currencies_supported": [
+        "jpy"
+      ],
+      "default_currency": "jpy",
+      "reviewed_brands": []
+    }
+  },
+  {
+    "type": "tenant.updated",
+    "description": "テナント情報の更新",
+    "data": {
+      "created": 1433127983,
+      "name": "test",
+      "id": "test",
+      "livemode": false,
+      "metadata": null,
+      "object": "tenant",
+      "platform_fee_rate": "10.15",
+      "payjp_fee_included": false,
+      "minimum_transfer_amount": 1000,
+      "bank_account_number": "0001000",
+      "bank_branch_code": "000",
+      "bank_code": "0000",
+      "bank_account_holder_name": "ヤマダ タロウ",
+      "bank_account_type": "普通",
+      "bank_account_status": "pending",
+      "currencies_supported": [
+        "jpy"
+      ],
+      "default_currency": "jpy",
+      "reviewed_brands": []
+    }
+  },
+  {
+    "type": "tenant.deleted",
+    "description": "テナント削除",
+    "data": {
+      "deleted": true,
+      "id": "test",
+      "livemode": false
+    }
+  },
+  {
+    "type": "tenant_transfer.succeeded",
+    "description": "テナントの入金内容の確定",
+    "data": {
+      "amount": 1000,
+      "carried_balance": null,
+      "charges": {
+        "count": 1,
+        "data": [
+          {
+            "amount": 1000,
+            "amount_refunded": 0,
+            "captured": true,
+            "captured_at": 1441706750,
+            "card": {
+              "address_city": null,
+              "address_line1": null,
+              "address_line2": null,
+              "address_state": null,
+              "address_zip": null,
+              "address_zip_check": "unchecked",
+              "brand": "Visa",
+              "country": null,
+              "created": 1441706750,
+              "customer": null,
+              "cvc_check": "unchecked",
+              "exp_month": 5,
+              "exp_year": 2099,
+              "fingerprint": "e1d8225886e3a7211127df751c86787f",
+              "id": "car_93e59e9a9714134ef639865e2b9e",
+              "last4": "4242",
+              "name": null,
+              "object": "card",
+              "three_d_secure_status": null
+            },
+            "created": 1441706750,
+            "currency": "jpy",
+            "customer": "cus_b92b879e60f62b532d6756ae12af",
+            "description": null,
+            "expired_at": null,
+            "failure_code": null,
+            "failure_message": null,
+            "fee_rate": "3.00",
+            "id": "ch_60baaf2dc8f3e35684ebe2031a6e0",
+            "object": "charge",
+            "paid": true,
+            "platform_fee": null,
+            "platform_fee_rate": "30.00",
+            "refund_reason": null,
+            "refunded": false,
+            "subscription": null,
+            "tenant": "ten_sample",
+            "total_platform_fee": 300,
+            "three_d_secure_status": null
+          }
+        ],
+        "has_more": false,
+        "object": "list",
+        "url": "/v1/tenant_transfers/ten_tr_23748b8c95c79edff22a8b7b795xx/charges"
+      },
+      "created": 1438354800,
+      "currency": "jpy",
+      "id": "ten_tr_23748b8c95c79edff22a8b7b795xx",
+      "livemode": false,
+      "object": "tenant_transfer",
+      "scheduled_date": "2015-09-16",
+      "status": "pending",
+      "summary": {
+        "charge_count": 1,
+        "charge_fee": 10,
+        "total_platform_fee": 300,
+        "charge_gross": 1000,
+        "net": 690,
+        "refund_amount": 0,
+        "refund_count": 0,
+        "dispute_amount": 0,
+        "dispute_count": 0
+      },
+      "tenant_id": "test",
+      "term_end": 1439650800,
+      "term_start": 1438354800,
+      "transfer_amount": null,
+      "transfer_date": null
+    }
+  },
+  {
+    "type": "term.created",
+    "description": "区間の作成",
+    "data": {
+      "charge_count": 5,
+      "dispute_count": 0,
+      "end_at": 1698764400,
+      "id": "tm_425000e2a448b39b83480a358fee5",
+      "livemode": false,
+      "closed": false,
+      "object": "term",
+      "refund_count": 0,
+      "start_at": 1696086000
+    }
+  },
+  {
+    "type": "term.closed",
+    "description": "区間の売上締め処理が終了",
+    "data": {
+      "charge_count": 5,
+      "dispute_count": 0,
+      "end_at": 1698764400,
+      "id": "tm_425000e2a448b39b83480a358fee5",
+      "livemode": false,
+      "closed": true,
+      "object": "term",
+      "refund_count": 0,
+      "start_at": 1696086000
+    }
+  },
+  {
+    "type": "statement.created",
+    "description": "取引明細の作成",
+    "data": {
+      "created": 1695892351,
+      "id": "st_178fd25dc7ab7b75906f5d4c4b0e6",
+      "items": [
+        {
+          "amount": 3125,
+          "name": "売上",
+          "subject": "gross_sales",
+          "tax_rate": "0.00"
+        },
+        {
+          "amount": -75,
+          "name": "決済手数料",
+          "subject": "fee",
+          "tax_rate": "0.00"
+        },
+        {
+          "amount": -1800,
+          "name": "返金",
+          "subject": "gross_refund",
+          "tax_rate": "0.00"
+        },
+        {
+          "amount": 36,
+          "name": "返金による手数料返還",
+          "subject": "refund_fee_offset",
+          "tax_rate": "0.00"
+        },
+        {
+          "amount": -775,
+          "name": "チャージバック",
+          "subject": "chargeback",
+          "tax_rate": "0.00"
+        },
+        {
+          "amount": 25,
+          "name": "チャージバックによる手数料返還",
+          "subject": "chargeback_fee_offset",
+          "tax_rate": "0.00"
+        }
+      ],
+      "livemode": true,
+      "object": "statement",
+      "title": null,
+      "tenant_id": null,
+      "updated": 1695892351,
+      "type": "sales",
+      "net": 536
+    }
+  },
+  {
+    "type": "balance.created",
+    "description": "残高の作成",
+    "data": {
+      "bank_info": {
+        "bank_account_holder_name": "テスト　フリコミ",
+        "bank_account_number": "0000001",
+        "bank_account_status": "success",
+        "bank_account_type": "普通",
+        "bank_branch_code": "000",
+        "bank_code": "0000"
+      },
+      "closed": true,
+      "created": 1706713200,
+      "due_date": 1711897200,
+      "id": "ba_013f3c308b771358605dd2445d60f",
+      "livemode": false,
+      "net": 14549999850,
+      "object": "balance",
+      "state": "transfer",
+      "statements": [
+        {
+          "balance_id": "ba_013f3c308b771358605dd2445d60f",
+          "created": 1709218801,
+          "id": "st_be6b875435edcceb598aca31edd49",
+          "items": [
+            {
+              "amount": -150,
+              "name": "振込手数料",
+              "subject": "transfer_fee",
+              "tax_rate": "10.00"
+            }
+          ],
+          "livemode": false,
+          "net": -150,
+          "object": "statement",
+          "tenant_id": null,
+          "term": null,
+          "title": null,
+          "updated": 1712430084,
+          "type": "transfer_fee"
+        },
+        {
+          "balance_id": "ba_013f3c308b771358605dd2445d60f",
+          "created": 1709218800,
+          "id": "st_1ad88786c727816ecd41609b6a5a1",
+          "items": [
+            {
+              "amount": 15000000000,
+              "name": "売上",
+              "subject": "gross_sales",
+              "tax_rate": "0.00"
+            },
+            {
+              "amount": -450000000,
+              "name": "決済手数料",
+              "subject": "fee",
+              "tax_rate": "0.00"
+            }
+          ],
+          "livemode": false,
+          "net": 14550000000,
+          "object": "statement",
+          "tenant_id": null,
+          "term": {
+            "charge_count": 15,
+            "dispute_count": 0,
+            "end_at": 1709218800,
+            "id": "tm_523e1651f76f4f15b61cc66306f37",
+            "livemode": false,
+            "object": "term",
+            "refund_count": 0,
+            "start_at": 1706713200
+          },
+          "title": null,
+          "updated": 1712430084,
+          "type": "sales"
+        }
+      ],
+      "tenant_id": null
+    }
+  },
+  {
+    "type": "balance.fixed",
+    "description": "残高が振込もしくは請求に確定した",
+    "data": {
+      "bank_info": {
+        "bank_account_holder_name": "テスト　フリコミ",
+        "bank_account_number": "0000001",
+        "bank_account_status": "success",
+        "bank_account_type": "普通",
+        "bank_branch_code": "000",
+        "bank_code": "0000"
+      },
+      "closed": true,
+      "created": 1706713200,
+      "due_date": 1711897200,
+      "id": "ba_013f3c308b771358605dd2445d60f",
+      "livemode": false,
+      "net": 14549999850,
+      "object": "balance",
+      "state": "transfer",
+      "statements": [
+        {
+          "balance_id": "ba_013f3c308b771358605dd2445d60f",
+          "created": 1709218801,
+          "id": "st_be6b875435edcceb598aca31edd49",
+          "items": [
+            {
+              "amount": -150,
+              "name": "振込手数料",
+              "subject": "transfer_fee",
+              "tax_rate": "10.00"
+            }
+          ],
+          "livemode": false,
+          "net": -150,
+          "object": "statement",
+          "tenant_id": null,
+          "term": null,
+          "title": null,
+          "updated": 1712430084,
+          "type": "transfer_fee"
+        },
+        {
+          "balance_id": "ba_013f3c308b771358605dd2445d60f",
+          "created": 1709218800,
+          "id": "st_1ad88786c727816ecd41609b6a5a1",
+          "items": [
+            {
+              "amount": 15000000000,
+              "name": "売上",
+              "subject": "gross_sales",
+              "tax_rate": "0.00"
+            },
+            {
+              "amount": -450000000,
+              "name": "決済手数料",
+              "subject": "fee",
+              "tax_rate": "0.00"
+            }
+          ],
+          "livemode": false,
+          "net": 14550000000,
+          "object": "statement",
+          "tenant_id": null,
+          "term": {
+            "charge_count": 15,
+            "dispute_count": 0,
+            "end_at": 1709218800,
+            "id": "tm_523e1651f76f4f15b61cc66306f37",
+            "livemode": false,
+            "object": "term",
+            "refund_count": 0,
+            "start_at": 1706713200
+          },
+          "title": null,
+          "updated": 1712430084,
+          "type": "sales"
+        }
+      ],
+      "tenant_id": null
+    }
+  },
+  {
+    "type": "balance.closed",
+    "description": "残高の精算が完了",
+    "data": {
+      "bank_info": {
+        "bank_account_holder_name": "テスト　フリコミ",
+        "bank_account_number": "0000001",
+        "bank_account_status": "success",
+        "bank_account_type": "普通",
+        "bank_branch_code": "000",
+        "bank_code": "0000"
+      },
+      "closed": true,
+      "created": 1706713200,
+      "due_date": 1711897200,
+      "id": "ba_013f3c308b771358605dd2445d60f",
+      "livemode": false,
+      "net": 14549999850,
+      "object": "balance",
+      "state": "transfer",
+      "statements": [
+        {
+          "balance_id": "ba_013f3c308b771358605dd2445d60f",
+          "created": 1709218801,
+          "id": "st_be6b875435edcceb598aca31edd49",
+          "items": [
+            {
+              "amount": -150,
+              "name": "振込手数料",
+              "subject": "transfer_fee",
+              "tax_rate": "10.00"
+            }
+          ],
+          "livemode": false,
+          "net": -150,
+          "object": "statement",
+          "tenant_id": null,
+          "term": null,
+          "title": null,
+          "updated": 1712430084,
+          "type": "transfer_fee"
+        },
+        {
+          "balance_id": "ba_013f3c308b771358605dd2445d60f",
+          "created": 1709218800,
+          "id": "st_1ad88786c727816ecd41609b6a5a1",
+          "items": [
+            {
+              "amount": 15000000000,
+              "name": "売上",
+              "subject": "gross_sales",
+              "tax_rate": "0.00"
+            },
+            {
+              "amount": -450000000,
+              "name": "決済手数料",
+              "subject": "fee",
+              "tax_rate": "0.00"
+            }
+          ],
+          "livemode": false,
+          "net": 14550000000,
+          "object": "statement",
+          "tenant_id": null,
+          "term": {
+            "charge_count": 15,
+            "dispute_count": 0,
+            "end_at": 1709218800,
+            "id": "tm_523e1651f76f4f15b61cc66306f37",
+            "livemode": false,
+            "object": "term",
+            "refund_count": 0,
+            "start_at": 1706713200
+          },
+          "title": null,
+          "updated": 1712430084,
+          "type": "sales"
+        }
+      ],
+      "tenant_id": null
+    }
+  },
+  {
+    "type": "balance.merged",
+    "description": "残高がマージされた",
+    "data": {
+      "bank_info": {
+        "bank_account_holder_name": "テスト　フリコミ",
+        "bank_account_number": "0000001",
+        "bank_account_status": "success",
+        "bank_account_type": "普通",
+        "bank_branch_code": "000",
+        "bank_code": "0000"
+      },
+      "closed": true,
+      "created": 1706713200,
+      "due_date": 1711897200,
+      "id": "ba_013f3c308b771358605dd2445d60f",
+      "livemode": false,
+      "net": 14549999850,
+      "object": "balance",
+      "state": "transfer",
+      "statements": [
+        {
+          "balance_id": "ba_013f3c308b771358605dd2445d60f",
+          "created": 1709218801,
+          "id": "st_be6b875435edcceb598aca31edd49",
+          "items": [
+            {
+              "amount": -150,
+              "name": "振込手数料",
+              "subject": "transfer_fee",
+              "tax_rate": "10.00"
+            }
+          ],
+          "livemode": false,
+          "net": -150,
+          "object": "statement",
+          "tenant_id": null,
+          "term": null,
+          "title": null,
+          "updated": 1712430084,
+          "type": "transfer_fee"
+        },
+        {
+          "balance_id": "ba_013f3c308b771358605dd2445d60f",
+          "created": 1709218800,
+          "id": "st_1ad88786c727816ecd41609b6a5a1",
+          "items": [
+            {
+              "amount": 15000000000,
+              "name": "売上",
+              "subject": "gross_sales",
+              "tax_rate": "0.00"
+            },
+            {
+              "amount": -450000000,
+              "name": "決済手数料",
+              "subject": "fee",
+              "tax_rate": "0.00"
+            }
+          ],
+          "livemode": false,
+          "net": 14550000000,
+          "object": "statement",
+          "tenant_id": null,
+          "term": {
+            "charge_count": 15,
+            "dispute_count": 0,
+            "end_at": 1709218800,
+            "id": "tm_523e1651f76f4f15b61cc66306f37",
+            "livemode": false,
+            "object": "term",
+            "refund_count": 0,
+            "start_at": 1706713200
+          },
+          "title": null,
+          "updated": 1712430084,
+          "type": "sales"
+        }
+      ],
+      "tenant_id": null
+    }
+  }
+]
