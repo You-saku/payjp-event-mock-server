@@ -1,9 +1,8 @@
-// PAY.JP webhook mock sender. Zero deps. `node server.js` -> http://localhost:8787
 const http = require('http');
 const fs = require('fs');
 const path = require('path');
 
-const PORT = process.env.PORT || 9000;
+const PORT = 9999;
 const files = { '/': 'index.html', '/templates.json': 'templates.json' };
 
 http.createServer(async (req, res) => {
