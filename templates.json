@@ -913,7 +913,38 @@
         "jpy"
       ],
       "default_currency": "jpy",
-      "reviewed_brands": []
+      "reviewed_brands": [
+        {
+          "available_date": 1788776132,
+          "brand": "Visa",
+          "status": "passed"
+        },
+        {
+          "available_date": 1788776132,
+          "brand": "MasterCard",
+          "status": "passed"
+        },
+        {
+          "available_date": 1788776132,
+          "brand": "JCB",
+          "status": "passed"
+        },
+        {
+          "available_date": 1788776132,
+          "brand": "Discover",
+          "status": "passed"
+        },
+        {
+          "available_date": 1788776132,
+          "brand": "AmericanExpress",
+          "status": "passed"
+        },
+        {
+          "available_date": 1788776132,
+          "brand": "DinersClub",
+          "status": "passed"
+        }
+      ]
     }
   },
   {
