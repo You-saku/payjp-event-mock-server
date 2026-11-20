@@ -18,7 +18,7 @@
 <main>
   <div class="row"><label style="width:120px">Webhook URL</label><input id="url" placeholder="https://..."></div>
   <div class="row"><label style="width:120px">Webhook Token</label><input id="token" placeholder="whook_..."></div>
-  <div class="row"><button id="send">送信</button><button id="reset">テンプレに戻す</button><span id="status"></span></div>
+  <div class="row"><button id="send">送信</button><button id="reset">テンプレに戻す</button><button id="fill">残りの &lt;placeholder&gt; をダミー値で埋める</button><span id="status"></span></div>
   <textarea id="editor" spellcheck="false"></textarea>
   <pre id="result"></pre>
 </main>
@@ -34,7 +34,8 @@
   });
   const select = t => {
     current = t;
-    $('editor').value = JSON.stringify(build(t), null, 2);
+    // 数値の placeholder は引用符なしで出す (数字に置換するだけで正しい JSON になる)
+    $('editor').value = JSON.stringify(build(t), null, 2).replace(/"<(UNIXTIME|AMOUNT|EXP_YEAR|EXP_MONTH)>"/g, '<$1>');
     document.querySelectorAll('aside button').forEach(b => b.classList.toggle('active', b.dataset.type === t.type));
   };
 
@@ -46,7 +47,20 @@
   });
 
   $('reset').onclick = () => current && select(current);
+  const DUMMY = { AMOUNT: 1000, RATE: '3.30', EXP_YEAR: 2099, EXP_MONTH: 12, LAST4: '4242', NAME: 'PAY TARO', EMAIL: 'test@example.com', PHONE: '+81301234567',
+    BANK_CODE: '0000', BANK_BRANCH_CODE: '000', BANK_ACCOUNT_NUMBER: '0000001', BANK_ACCOUNT_HOLDER_NAME: 'ヤマダ タロウ' };
+  $('fill').onclick = () => {
+    const ids = {}; // 同名の placeholder は同じ値にする (customer.id と cards.url など)
+    $('editor').value = $('editor').value
+      .replace(/<(\w+)_ID>/g, (_, p) => ids[p] ??= p + '_' + hex(28))
+      .replace(/<UNIXTIME>/g, Math.floor(Date.now() / 1000))
+      .replace(/<YYYY-MM-DD>/g, new Date().toLocaleDateString('sv'))
+      .replace(/<FINGERPRINT>/g, hex(32))
+      .replace(/<([A-Z0-9_]+)>/g, (m, k) => DUMMY[k] ?? m);
+  };
   $('send').onclick = async () => {
+    const left = $('editor').value.split('\n').flatMap((l, i) => (l.match(/<[\w-]+>/g) || []).map(p => `  L${i + 1}: ${p}`));
+    if (left.length) return $('result').textContent = `未置換の placeholder が ${left.length} 箇所あります:\n` + left.join('\n');
     let event;
     try { event = JSON.parse($('editor').value); } catch (e) { return $('result').textContent = 'JSON parse error: ' + e.message; }
     $('status').textContent = '送信中...';
